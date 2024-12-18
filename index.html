@@ -33,6 +33,18 @@
 
           addItem.innerText += `${input}` + "\n"
         }
+
+
+
+
+        
+        function addBox() {
+            const input = document.getElementById('input-field');
+            const text = input.value.trim();
+            const box = `<div class="output-box">${text}</div>`;
+            document.getElementById('output-container').innerHTML += box;
+            input.value = '';
+        }
     
 
 
