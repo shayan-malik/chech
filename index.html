@@ -59,6 +59,31 @@
     </script>
 
 
+    
+<script>
+
+setInterval(function(){
+
+    let currdate = new Date()
+
+    let monthnames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","oct","Nov","Dec"]
+
+    let date   = currdate.getDate();
+    let month  = monthnames[currdate.getMonth()]
+    let year   = currdate.getFullYear();
+    let hour   = currdate.getHours();
+    let minute = currdate.getMinutes();
+    let second = currdate.getSeconds();
+
+    let fulltimeprt = `${date} ${month} ${year} ${hour} : ${minute} : ${second}`
+    console.log(fulltimeprt)
+    document.getElementById("container").innerText = fulltimeprt
+
+},1000)
+
+</script
+
+
 
 
 
